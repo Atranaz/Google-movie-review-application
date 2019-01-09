@@ -399,6 +399,9 @@ h3.movie-info {
 .jslghtbx-contentwrapper>img {
 	background-color: transparent;
 }
+.jslghtbx-nooverflow {
+	overflow: auto!important;
+}
 
 
 /* Text content area */
