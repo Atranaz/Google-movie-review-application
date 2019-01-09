@@ -175,7 +175,7 @@ window.onscroll = function changeClass(){
 			    	actor_url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemyxECZwq-2HN1V9OJzNRjtRgeaJWUA02KrNqivdf3h-PH1fGyfe0wTKNEGoBlm16auWsTw',
 			    	profilediv = document.createElement("div"),
 			    	actor_clone;
-			    console.log(actorsdata);
+
 			    profilediv.classList.add("profile-box");
 
 			    actorsdata.forEach(function(actor) {
@@ -186,9 +186,38 @@ window.onscroll = function changeClass(){
 
 				tingle.modal.init();
 				let btn = document.querySelector('.trigger-button');
+					//
 				btn.addEventListener('click', function(){
-				  tingle.modal.setContent(document.querySelector('.tingle-demo').innerHTML);
+	
+				  tingle.modal.setContent('<div><div class="top-area"><div class="swiper-cast"><div class="swiper-wrapper"><div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZMT1IEm2BuoO5cmrLhJOmT113t3O3JLRYDiOdUGQoUMeFmjUDg"></div><div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpZMT1IEm2BuoO5cmrLhJOmT113t3O3JLRYDiOdUGQoUMeFmjUDg"></div><div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfuti39OO-awSl6G6pNKzBFy4Gsx2Kml7eC_E8_89FsFSdUAEzOA"></div><div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfuti39OO-awSl6G6pNKzBFy4Gsx2Kml7eC_E8_89FsFSdUAEzOA"></div></div></div><div class="popcast-titlearea"><h3>Tom Hardy<span>Actor</span></h3></div></div><div class="down-area"><div class="hide-box "><div class="movie-text"><p>Edward Thomas Hardy CBE is an English actor and producer. After studying method acting at the Drama Centre London, Hardy made his film debut in Ridley Scott Black Hawk Down and has since appeared in ...</p></div><div class="movie-awards movie-releasedate"><p>Born: <span>September 15, 1977 (age 41 years)</span></p></div><div class="movie-awards movie-releasedate"><p>Height: <span>1.75 m</span></p></div><div class="movie-awards movie-releasedate"><p>Residence: <span>Richmond, London</span></p></div><div class="movie-awards movie-releasedate"><p>Spouse:  <span>Charlotte Riley</span></p></div><div class="movie-awards movie-releasedate"><p>Children:  <span>Louis Thomas Hardy</span></p></div></div></div></div>');
 				  tingle.modal.open();
+				  let downArea = document.querySelector('.hide-box');
+				  downArea.classList.toggle('up-box');
+				  
+				  let castSwiper = new Swiper ('.swiper-cast', {
+		      		
+			      		slidesPerView: 3,
+			      		spaceBetween: 0,
+			      		breakpoints: {
+					        1024: {
+					          slidesPerView: 6,
+					          spaceBetween: 0,
+					        },
+					        768: {
+					          slidesPerView: 4,
+					          spaceBetween: 0,
+					        },
+					        640: {
+					          slidesPerView: 3,
+					          spaceBetween: 0,
+					        },
+					        320: {
+					          slidesPerView: 3,
+					          spaceBetween: 0,
+					        }
+					    }
+		    		});
+
 				});
 
 			}
@@ -206,7 +235,7 @@ window.onscroll = function changeClass(){
 	};
 	theButton.onclick = function () {
 		theSection.classList.toggle('show-section');
-		theArrow.classList.toggle('up-arsrow');
+		theArrow.classList.toggle('up-arrow');
 	};
 
 })();

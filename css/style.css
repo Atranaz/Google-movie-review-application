@@ -66,10 +66,11 @@ table {
 
 /* EXTRA STYLING */
 #find-movie {
-	position: fixed;
+	padding:5px 0 50px;
 	width: 100%;
 	height: 100%;
 	background-color: #0097A7;
+	position: fixed;
 }
 .find-box {
 	background-color: #fff;
@@ -97,7 +98,7 @@ input 				{
 	font-size:18px;
 	padding:10px 10px 10px 5px;
 	display:block;
-	width:300px;
+	width:88%;
 	border:none;
 	border-bottom:1px solid #757575;
 }
@@ -124,7 +125,7 @@ input:focus ~ label, input:valid ~ label 		{
 	color:#0097A7;
 }
 
-.bar 	{ position:relative; display:block; width:315px; }
+.bar 	{ position:relative; display:block; width:94%; }
 .bar:before, .bar:after 	{
 	content:'';
 	height:2px; 
@@ -578,6 +579,7 @@ span.google-user {
 	overflow: hidden;
 	vertical-align: top;
 	width: 96px;
+	flex: 0 1 31%;
 }
 .profile-box a img {
 	border-top-left-radius: 8px;
@@ -611,11 +613,71 @@ span.google-user {
 	color: rgba(0,0,0,.54);
 }
 
+/* testing unit */
+
+.top-area {
+	height: auto;
+	overflow: hidden;
+	width: auto;
+}
+.top-area img {
+	width: 100%;
+	height: auto;
+}
+.down-area {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hide-box {
+    position: absolute;
+    width: auto;
+    top: 100%;
+    transition: all .5s ease-out;
+    background: #fff;
+    height: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.hide-box.up-box {
+    top: 0;
+}
+.popcast-titlearea {
+    background: rgb(132, 51, 58);
+    padding: 10px 0 10px 25px;
+    text-align: left;
+    font-size: 22px;
+    color: #fff;
+}
+
+.popcast-titlearea h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: Roboto-Light,HelveticaNeue-Light,HelveticaNeue,sans-serif-light,Arial,sans-serif;
+    margin-bottom: 20px;
+}
+.popcast-titlearea span {
+    font-size: 14px;
+    display: block;
+    margin-top: 8px;
+}
+
+
+.swiper-cast {
+    background: rgb(132, 51, 58);
+}
+
 @media screen and (min-width: 400px)  {
 	.wrap {
 		max-width:100%;
 	}
 }
-@media screen and (min-width: 600px)  {}
-@media screen and (min-width: 1000px) {}
-@media screen and (min-width: 1400px) {}
+@media screen and (orientation: landscape) { 
+
+	#find-movie {
+    	position: inherit;
+	}
+}
