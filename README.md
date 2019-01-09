@@ -3,9 +3,11 @@
 Movie overview small application assignment using plain HTML, CSS and JavaScript.
 
 ## Dependies & Inspiration
-- Tympus menu for tab animation
+- tympanus.net for tab animation
+- classie.js for menu
 - Swiper.js for scroll content
-- Lint.js for image pop-up
+- lighbox for image pop-up
+- tingle.js for cast modal
 
 
 ## Work In progress
@@ -13,8 +15,8 @@ Movie overview small application assignment using plain HTML, CSS and JavaScript
 - Responsive & Cross browser testing
 
 ## Roadmap
-- Add navigation between find & view area
-- Check input field empty
-- Example movies data on click
+- Add navigation between find movie & movie review area
+- Check input field empty or not
+- Example movies data on one click
 - Work on animation of pop up and modal
 - Install webpack & beble and convert js function accordingly
