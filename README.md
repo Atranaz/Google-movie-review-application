@@ -11,8 +11,8 @@ Movie overview small application assignment using plain HTML, CSS and JavaScript
 
 
 ## Work In progress
-- Work on modal box of cast overview
-- Responsive & Cross browser testing
+- ~~Work on modal box of cast overview~~
+- ~~Responsive & Cross browser testing~~
 
 ## Roadmap
 - Add navigation between find movie & movie review area
