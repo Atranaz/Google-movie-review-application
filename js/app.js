@@ -56,7 +56,7 @@ window.onscroll = function changeClass(){
 		
 		let movieName = document.getElementById('movie-title').value,
 		movieYear = document.getElementById('movie-year').value,
-		url = 'http://www.omdbapi.com/?apikey=c2960c6d&t='+movieName+'&y='+movieYear+'';
+		url = 'https://www.omdbapi.com/?apikey=c2960c6d&t='+movieName+'&y='+movieYear+'';
 		fetch(url).then(response => {
 		if (!response.ok) {
 		throw Error(response.statusText);
