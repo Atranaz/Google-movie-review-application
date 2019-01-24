@@ -1,5 +1,5 @@
 require('../css/style.css');
-let cars = require("./cars.js");
+let main = require("./main.js");
 let $ = require('jquery');
 
 
