@@ -19,4 +19,4 @@ Movie overview small application assignment using plain HTML, CSS and JavaScript
 - Check input field empty or not
 - Example movies data on one click
 - Work on animation of pop up and modal
-- Install webpack & beble and convert js function accordingly
+- ~~Install webpack & beble and convert js function accordingly
